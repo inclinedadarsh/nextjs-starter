@@ -8,12 +8,15 @@
     "start": "next start",
     "lint": "next lint",
     "lint-staged": "lint-staged",
-    "type-check": "tsc --project tsconfig.json --pretty --noEmit && echo "
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit && echo ",
+    "commitlint": "commitlint --edit"
   },
   "dependencies": {
+    "@commitlint/cli": "^18.5.0",
+    "@commitlint/config-conventional": "^18.5.0",
+    "next": "14.1.0",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.0"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
