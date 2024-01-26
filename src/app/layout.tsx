@@ -1,11 +1,15 @@
 import type { Metadata } from 'next';
-import { Inter, Space_Grotesk } from 'next/font/google';
+import { Inter, Source_Serif_4 } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { cn } from '@/lib/utils';
 
 const fontSans = Inter({ subsets: ['latin'], variable: '--font-sans' });
-const fontMono = Space_Grotesk({ subsets: ['latin'], variable: '--font-mono' });
+const fontSerif = Source_Serif_4({
+  subsets: ['latin'],
+  style: ['italic', 'normal'],
+  variable: '--font-serif',
+});
 
 export const metadata: Metadata = {
   title: 'NextJS Starter Template by Adarsh Dubey',
@@ -38,7 +42,7 @@ export default function RootLayout({
         className={cn(
           'font-sans antialiased',
           fontSans.variable,
-          fontMono.variable
+          fontSerif.variable
         )}
       >
         <ThemeProvider
