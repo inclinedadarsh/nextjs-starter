@@ -73,11 +73,18 @@ export default function Home() {
           ))}
         </div>
         <div className="flex justify-center gap-6 my-16">
-          <Link href="#" className={`${buttonVariants({})}`}>
+          <Link
+            href="https://nextjs-docs.adarshdubey.com/"
+            className={`${buttonVariants({})}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Get started
           </Link>
           <Link
             href="https://github.com/inclinedadarsh/nextjs-starter"
+            target="_blank"
+            rel="noopener noreferrer"
             className={`${buttonVariants({ variant: 'outline' })}`}
           >
             Star on GitHub
