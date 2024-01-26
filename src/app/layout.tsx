@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 const fontSans = Inter({ subsets: ['latin'], variable: '--font-sans' });
 const fontSerif = Source_Serif_4({
   subsets: ['latin'],
-  style: ['italic'],
+  style: ['italic', 'normal'],
   variable: '--font-serif',
 });
 
