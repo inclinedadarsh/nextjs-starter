@@ -38,12 +38,14 @@ export default function Home() {
           <Link
             className={`${buttonVariants({ variant: 'outline', size: 'icon' })} flex gap-2`}
             href="https://twitter.com/inclinedadarsh"
+            aria-label="twitter link"
           >
             <Twitter size={16} strokeWidth={1.5} />
           </Link>
           <Link
             className={`${buttonVariants({ variant: 'outline', size: 'icon' })} flex gap-2`}
             href="https://github.com/inclinedadarsh"
+            aria-label="github link"
           >
             <Github size={16} strokeWidth={1.5} />
           </Link>
